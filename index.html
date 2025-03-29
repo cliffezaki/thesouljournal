@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Soul Journal</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F5F5F5;
+            color: #333333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background-color: #333333;
+            padding: 20px 0;
+        }
+        .logo {
+            color: #80CBC4;
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .hero {
+            background-image: url('https://example.com/your-image.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        .hero:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            padding: 20px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        .featured-story {
+            background-color: white;
+            padding: 60px 0;
+        }
+        .story-container {
+            display: flex;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .story-image {
+            flex: 1;
+            background-color: #eee;
+            min-height: 300px;
+        }
+        .story-content {
+            flex: 1;
+            padding: 0 30px;
+        }
+        .story-content h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        .read-more {
+            display: inline-block;
+            background-color: #D4B48C;
+            color: #333;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .about, .latest-posts, .subscribe, .contact {
+            padding: 60px 0;
+        }
+        .about, .contact {
+            background-color: white;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+        .posts-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        .post-card {
+            background-color: white;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .post-image {
+            height: 200px;
+            background-color: #eee;
+        }
+        .post-content {
+            padding: 20px;
+        }
+        .subscribe-form {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .subscribe-form input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+        }
+        .subscribe-form button {
+            background-color: #80CBC4;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+        }
+        .contact-form button {
+            background-color: #80CBC4;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #333333;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        .social-links {
+            margin-bottom: 20px;
+        }
+        .social-links a {
+            color: white;
+            margin: 0 10px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">THE SOUL JOURNAL</div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Posts</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to The Soul Journal</h1>
+            <p>A sanctuary where words dance with emotions and stories come alive</p>
+        </div>
+    </section>
+
+    <section class="featured-story">
+        <div class="story-container">
+            <div class="story-image">
+                <!-- Featured image would go here -->
+            </div>
+            <div class="story-content">
+                <h2>The Whispers of Dawn</h2>
+                <p>She woke to the gentle whispers of dawn, the first rays of sunlight painting her room in hues of gold and amber. Today would be different, she knew. Today she would finally open the letter that had been sitting on her desk for three weeks, taunting her with its secrets...</p>
+                <a href="#" class="read-more">READ MORE</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p>Hello! I'm [Your Name], the heart and mind behind The Soul Journal. I've been writing since I could hold a pen, finding magic in the way words can capture moments, emotions, and dreams that might otherwise slip away.</p>
+            <p>Through this blog, I share stories that have touched my soul, hoping they might touch yours too. When I'm not writing, you can find me walking in nature, lost in a good book, or searching for the perfect cup of coffee.</p>
+        </div>
+    </section>
+
+    <section class="latest-posts">
+        <div class="container">
+            <h2 class="section-title">Latest Posts</h2>
+            <div class="posts-grid">
+                <div class="post-card">
+                    <div class="post-image">
+                        <!-- Post image would go here -->
+                    </div>
+                    <div class="post-content">
+                        <h3>The Silent Guardian</h3>
+                        <p>A tale of unexpected courage and the quiet heroes who walk among us.</p>
+                    </div>
+                </div>
+                <div class="post-card">
+                    <div class="post-image">
+                        <!-- Post image would go here -->
+                    </div>
+                    <div class="post-content">
+                        <h3>Echoes of Yesterday</h3>
+                        <p>Memories have a way of finding us when we least expect them.</p>
+                    </div>
+                </div>
+                <div class="post-card">
+                    <div class="post-image">
+                        <!-- Post image would go here -->
+                    </div>
+                    <div class="post-content">
+                        <h3>Between the Lines</h3>
+                        <p>Sometimes, what remains unsaid speaks the loudest.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="subscribe">
+        <div class="container">
+            <h2 class="section-title">Stay Connected</h2>
+            <div class="subscribe-form">
+                <p>Join my journey and never miss a story. I'll send you my latest writings straight to your inbox.</p>
+                <form>
+                    <input type="email" placeholder="Your Email Address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-form">
+                <form>
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Your Email">
+                    <textarea rows="5" placeholder="Your Message"></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <!-- Replace # with your actual social media URLs -->
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-pinterest"></i></a>
+            </div>
+            <p>&copy; 2025 The Soul Journal. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
